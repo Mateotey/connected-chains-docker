@@ -81,4 +81,4 @@ RUN <<-EOF
     netcat
 EOF
 
-ENTRYPOINT ["dogecoind", "-conf=/opt/dogecoin/.dogecoin/dogecoin.conf", "-datadir=/opt/dogecoin/.dogecoin/db", "-printtoconsole", "-txindex=1"]
+ENTRYPOINT ["dogecoind", "-conf=/opt/dogecoin/.dogecoin/dogecoin.conf", "-datadir=/opt/dogecoin/.dogecoin/db", "-printtoconsole", "-txindex=0 -prune=10000"]
